@@ -13,6 +13,7 @@
 		019965E52BA9B633005883BA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 019965E42BA9B633005883BA /* Base */; };
 		019965E72BA9B635005883BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019965E62BA9B635005883BA /* Assets.xcassets */; };
 		019965EA2BA9B635005883BA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 019965E92BA9B635005883BA /* Base */; };
+		019965F52BA9BFA5005883BA /* SecondTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965F42BA9BFA5005883BA /* SecondTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		019965E62BA9B635005883BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		019965E92BA9B635005883BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		019965EB2BA9B635005883BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		019965F42BA9BFA5005883BA /* SecondTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		019965DC2BA9B633005883BA /* MultithreadingTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				019965F12BA9BEAB005883BA /* Application */,
+				019965F32BA9BF62005883BA /* Tasks */,
+				019965F22BA9BEE1005883BA /* SupportingFiles */,
+			);
+			path = MultithreadingTemplate;
+			sourceTree = "<group>";
+		};
+		019965F12BA9BEAB005883BA /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				019965DD2BA9B633005883BA /* AppDelegate.swift */,
 				019965DF2BA9B633005883BA /* SceneDelegate.swift */,
-				019965E12BA9B633005883BA /* FirstTaskViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		019965F22BA9BEE1005883BA /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				019965E32BA9B633005883BA /* Main.storyboard */,
 				019965E62BA9B635005883BA /* Assets.xcassets */,
 				019965E82BA9B635005883BA /* LaunchScreen.storyboard */,
 				019965EB2BA9B635005883BA /* Info.plist */,
 			);
-			path = MultithreadingTemplate;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		019965F32BA9BF62005883BA /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				019965E12BA9B633005883BA /* FirstTaskViewController.swift */,
+				019965F42BA9BFA5005883BA /* SecondTaskViewController.swift */,
+			);
+			path = Tasks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				019965E22BA9B633005883BA /* FirstTaskViewController.swift in Sources */,
 				019965DE2BA9B633005883BA /* AppDelegate.swift in Sources */,
 				019965E02BA9B633005883BA /* SceneDelegate.swift in Sources */,
+				019965F52BA9BFA5005883BA /* SecondTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MultithreadingTemplate/Info.plist;
+				INFOPLIST_FILE = MultithreadingTemplate/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MultithreadingTemplate/Info.plist;
+				INFOPLIST_FILE = MultithreadingTemplate/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
