@@ -14,6 +14,12 @@
 		019965E72BA9B635005883BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019965E62BA9B635005883BA /* Assets.xcassets */; };
 		019965EA2BA9B635005883BA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 019965E92BA9B635005883BA /* Base */; };
 		019965F52BA9BFA5005883BA /* SecondTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965F42BA9BFA5005883BA /* SecondTaskViewController.swift */; };
+		019965F72BA9CEB4005883BA /* ThirdTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965F62BA9CEB4005883BA /* ThirdTaskViewController.swift */; };
+		019965F92BAA1EEF005883BA /* FourthTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965F82BAA1EEF005883BA /* FourthTaskViewController.swift */; };
+		019965FB2BAA212E005883BA /* FifthTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965FA2BAA212E005883BA /* FifthTaskViewController.swift */; };
+		019965FD2BAA27FA005883BA /* SixthTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965FC2BAA27FA005883BA /* SixthTaskViewController.swift */; };
+		019965FF2BAA362C005883BA /* SeventhTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965FE2BAA362C005883BA /* SeventhTaskViewController.swift */; };
+		019966012BAAB48B005883BA /* EightTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966002BAAB48B005883BA /* EightTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		019965E92BA9B635005883BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		019965EB2BA9B635005883BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		019965F42BA9BFA5005883BA /* SecondTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTaskViewController.swift; sourceTree = "<group>"; };
+		019965F62BA9CEB4005883BA /* ThirdTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTaskViewController.swift; sourceTree = "<group>"; };
+		019965F82BAA1EEF005883BA /* FourthTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthTaskViewController.swift; sourceTree = "<group>"; };
+		019965FA2BAA212E005883BA /* FifthTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthTaskViewController.swift; sourceTree = "<group>"; };
+		019965FC2BAA27FA005883BA /* SixthTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthTaskViewController.swift; sourceTree = "<group>"; };
+		019965FE2BAA362C005883BA /* SeventhTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhTaskViewController.swift; sourceTree = "<group>"; };
+		019966002BAAB48B005883BA /* EightTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,12 @@
 			children = (
 				019965E12BA9B633005883BA /* FirstTaskViewController.swift */,
 				019965F42BA9BFA5005883BA /* SecondTaskViewController.swift */,
+				019965F62BA9CEB4005883BA /* ThirdTaskViewController.swift */,
+				019965F82BAA1EEF005883BA /* FourthTaskViewController.swift */,
+				019965FA2BAA212E005883BA /* FifthTaskViewController.swift */,
+				019965FC2BAA27FA005883BA /* SixthTaskViewController.swift */,
+				019965FE2BAA362C005883BA /* SeventhTaskViewController.swift */,
+				019966002BAAB48B005883BA /* EightTaskViewController.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -166,9 +184,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				019965E22BA9B633005883BA /* FirstTaskViewController.swift in Sources */,
+				019965F72BA9CEB4005883BA /* ThirdTaskViewController.swift in Sources */,
+				019965FD2BAA27FA005883BA /* SixthTaskViewController.swift in Sources */,
 				019965DE2BA9B633005883BA /* AppDelegate.swift in Sources */,
+				019965FB2BAA212E005883BA /* FifthTaskViewController.swift in Sources */,
 				019965E02BA9B633005883BA /* SceneDelegate.swift in Sources */,
 				019965F52BA9BFA5005883BA /* SecondTaskViewController.swift in Sources */,
+				019965F92BAA1EEF005883BA /* FourthTaskViewController.swift in Sources */,
+				019965FF2BAA362C005883BA /* SeventhTaskViewController.swift in Sources */,
+				019966012BAAB48B005883BA /* EightTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
