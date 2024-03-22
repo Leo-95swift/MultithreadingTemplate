@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		019965DE2BA9B633005883BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965DD2BA9B633005883BA /* AppDelegate.swift */; };
 		019965E02BA9B633005883BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965DF2BA9B633005883BA /* SceneDelegate.swift */; };
-		019965E22BA9B633005883BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965E12BA9B633005883BA /* ViewController.swift */; };
+		019965E22BA9B633005883BA /* SemaphoreTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019965E12BA9B633005883BA /* SemaphoreTaskViewController.swift */; };
 		019965E52BA9B633005883BA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 019965E42BA9B633005883BA /* Base */; };
 		019965E72BA9B635005883BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019965E62BA9B635005883BA /* Assets.xcassets */; };
 		019965EA2BA9B635005883BA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 019965E92BA9B635005883BA /* Base */; };
+		019966152BAD4A29005883BA /* DispatchGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966142BAD4A29005883BA /* DispatchGroupViewController.swift */; };
+		019966172BAD4AA3005883BA /* DeadLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966162BAD4AA3005883BA /* DeadLockViewController.swift */; };
+		019966192BAD4B72005883BA /* RaceConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966182BAD4B72005883BA /* RaceConditionViewController.swift */; };
+		0199661B2BAD4C9C005883BA /* DifferentDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199661A2BAD4C9C005883BA /* DifferentDirectionsViewController.swift */; };
+		0199661D2BAD4D28005883BA /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199661C2BAD4D28005883BA /* RecipeViewController.swift */; };
+		0199661F2BAD4D97005883BA /* DispatchWorkItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199661E2BAD4D97005883BA /* DispatchWorkItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		019965DA2BA9B633005883BA /* MultithreadingTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultithreadingTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		019965DD2BA9B633005883BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		019965DF2BA9B633005883BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		019965E12BA9B633005883BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		019965E12BA9B633005883BA /* SemaphoreTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemaphoreTaskViewController.swift; sourceTree = "<group>"; };
 		019965E42BA9B633005883BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		019965E62BA9B635005883BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		019965E92BA9B635005883BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		019965EB2BA9B635005883BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		019966142BAD4A29005883BA /* DispatchGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroupViewController.swift; sourceTree = "<group>"; };
+		019966162BAD4AA3005883BA /* DeadLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadLockViewController.swift; sourceTree = "<group>"; };
+		019966182BAD4B72005883BA /* RaceConditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceConditionViewController.swift; sourceTree = "<group>"; };
+		0199661A2BAD4C9C005883BA /* DifferentDirectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentDirectionsViewController.swift; sourceTree = "<group>"; };
+		0199661C2BAD4D28005883BA /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		0199661E2BAD4D97005883BA /* DispatchWorkItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchWorkItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,45 @@
 		019965DC2BA9B633005883BA /* MultithreadingTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				019966112BAD48A2005883BA /* Application */,
+				019966122BAD48B7005883BA /* SupportingFiles */,
+				019966132BAD49F6005883BA /* Tasks */,
+			);
+			path = MultithreadingTemplate;
+			sourceTree = "<group>";
+		};
+		019966112BAD48A2005883BA /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				019965DD2BA9B633005883BA /* AppDelegate.swift */,
 				019965DF2BA9B633005883BA /* SceneDelegate.swift */,
-				019965E12BA9B633005883BA /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		019966122BAD48B7005883BA /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				019965E32BA9B633005883BA /* Main.storyboard */,
 				019965E62BA9B635005883BA /* Assets.xcassets */,
 				019965E82BA9B635005883BA /* LaunchScreen.storyboard */,
 				019965EB2BA9B635005883BA /* Info.plist */,
 			);
-			path = MultithreadingTemplate;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		019966132BAD49F6005883BA /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				019965E12BA9B633005883BA /* SemaphoreTaskViewController.swift */,
+				019966142BAD4A29005883BA /* DispatchGroupViewController.swift */,
+				019966162BAD4AA3005883BA /* DeadLockViewController.swift */,
+				019966182BAD4B72005883BA /* RaceConditionViewController.swift */,
+				0199661A2BAD4C9C005883BA /* DifferentDirectionsViewController.swift */,
+				0199661C2BAD4D28005883BA /* RecipeViewController.swift */,
+				0199661E2BAD4D97005883BA /* DispatchWorkItemViewController.swift */,
+			);
+			path = Tasks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				019965E22BA9B633005883BA /* ViewController.swift in Sources */,
+				019966152BAD4A29005883BA /* DispatchGroupViewController.swift in Sources */,
+				0199661F2BAD4D97005883BA /* DispatchWorkItemViewController.swift in Sources */,
+				019965E22BA9B633005883BA /* SemaphoreTaskViewController.swift in Sources */,
 				019965DE2BA9B633005883BA /* AppDelegate.swift in Sources */,
+				0199661B2BAD4C9C005883BA /* DifferentDirectionsViewController.swift in Sources */,
+				0199661D2BAD4D28005883BA /* RecipeViewController.swift in Sources */,
+				019966192BAD4B72005883BA /* RaceConditionViewController.swift in Sources */,
+				019966172BAD4AA3005883BA /* DeadLockViewController.swift in Sources */,
 				019965E02BA9B633005883BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MultithreadingTemplate/Info.plist;
+				INFOPLIST_FILE = MultithreadingTemplate/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MultithreadingTemplate/Info.plist;
+				INFOPLIST_FILE = MultithreadingTemplate/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
