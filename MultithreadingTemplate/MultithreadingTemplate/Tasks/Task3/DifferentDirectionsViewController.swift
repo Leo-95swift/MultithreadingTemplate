@@ -13,10 +13,11 @@ final class DifferentDirectionsViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             
-            var people1 = People1()
-            var people2 = People2()
+            let people1 = People1()
+            let people2 = People2()
             
             let thread1 = Thread {
+                people1.isDifferentDirections = true
                 people1.walkPast(with: people2)
             }
 
@@ -30,7 +31,6 @@ final class DifferentDirectionsViewController: UIViewController {
         }
      
     }
-
 
     class People1 {
         var isDifferentDirections = false

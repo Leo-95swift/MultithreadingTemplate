@@ -30,12 +30,15 @@ final class RecipeViewController: UIViewController {
         resourceASemaphore.wait() // Захват Ресурса A
         
         print("Поток 1 захватил Ресурс A и пытается захватить Ресурс B")
-        Thread.sleep(forTimeInterval: 1) // Имитация работы для демонстрации livelock
+        Thread.sleep(forTimeInterval: 1) 
+        // Имитация работы для демонстрации livelock
         
-        //resourceBSemaphore.wait() // Попытка захвата Ресурса B, который уже занят Потоком 2
+//        resourceBSemaphore.wait() 
+        
+        // Попытка захвата Ресурса B, который уже занят Потоком 2
         print("Поток 1 захватил Ресурс B")
         
-        //resourceBSemaphore.signal()
+//        resourceBSemaphore.signal()
         resourceASemaphore.signal()
     }
 
@@ -44,12 +47,18 @@ final class RecipeViewController: UIViewController {
         resourceBSemaphore.wait() // Захват Ресурса B
         
         print("Поток 2 захватил Ресурс B и пытается захватить Ресурс A")
-        Thread.sleep(forTimeInterval: 1) // Имитация работы для демонстрации livelock
+        Thread.sleep(forTimeInterval: 1) 
+        // Имитация работы для демонстрации livelock
         
-       // resourceASemaphore.wait() // Попытка захвата Ресурса A, который уже занят Потоком 1
+//        resourceASemaphore.wait() 
+        // Попытка захвата Ресурса A, который уже занят Потоком 1
         print("Поток 2 захватил Ресурс A")
         
-        //resourceASemaphore.signal()
+//        resourceASemaphore.signal()
         resourceBSemaphore.signal()
     }
 }
+
+// в нашем коде нет liveLock-а так как строчки 36 41 и 53 57 прокоментированы
+// мы могли бы получить liveLock если бы оба потока блокировали ресурсы друг у друга
+// то бы привило к тому, что оба потока ждали бы друг друга вечно

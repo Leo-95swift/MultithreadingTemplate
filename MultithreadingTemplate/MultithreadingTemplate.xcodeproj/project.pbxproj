@@ -19,6 +19,8 @@
 		0199661B2BAD4C9C005883BA /* DifferentDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199661A2BAD4C9C005883BA /* DifferentDirectionsViewController.swift */; };
 		0199661D2BAD4D28005883BA /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199661C2BAD4D28005883BA /* RecipeViewController.swift */; };
 		0199661F2BAD4D97005883BA /* DispatchWorkItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199661E2BAD4D97005883BA /* DispatchWorkItemViewController.swift */; };
+		019966232BAD4E84005883BA /* SendableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966222BAD4E84005883BA /* SendableViewController.swift */; };
+		019966252BAD5133005883BA /* RMOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966242BAD5133005883BA /* RMOperationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		0199661A2BAD4C9C005883BA /* DifferentDirectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentDirectionsViewController.swift; sourceTree = "<group>"; };
 		0199661C2BAD4D28005883BA /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		0199661E2BAD4D97005883BA /* DispatchWorkItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchWorkItemViewController.swift; sourceTree = "<group>"; };
+		019966222BAD4E84005883BA /* SendableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableViewController.swift; sourceTree = "<group>"; };
+		019966242BAD5133005883BA /* RMOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMOperationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				019966112BAD48A2005883BA /* Application */,
-				019966122BAD48B7005883BA /* SupportingFiles */,
 				019966132BAD49F6005883BA /* Tasks */,
+				019966122BAD48B7005883BA /* SupportingFiles */,
 			);
 			path = MultithreadingTemplate;
 			sourceTree = "<group>";
@@ -98,6 +102,15 @@
 		019966132BAD49F6005883BA /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				019966202BAD4E03005883BA /* Task3 */,
+				019966212BAD4E1C005883BA /* Task4 */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		019966202BAD4E03005883BA /* Task3 */ = {
+			isa = PBXGroup;
+			children = (
 				019965E12BA9B633005883BA /* SemaphoreTaskViewController.swift */,
 				019966142BAD4A29005883BA /* DispatchGroupViewController.swift */,
 				019966162BAD4AA3005883BA /* DeadLockViewController.swift */,
@@ -106,7 +119,16 @@
 				0199661C2BAD4D28005883BA /* RecipeViewController.swift */,
 				0199661E2BAD4D97005883BA /* DispatchWorkItemViewController.swift */,
 			);
-			path = Tasks;
+			path = Task3;
+			sourceTree = "<group>";
+		};
+		019966212BAD4E1C005883BA /* Task4 */ = {
+			isa = PBXGroup;
+			children = (
+				019966222BAD4E84005883BA /* SendableViewController.swift */,
+				019966242BAD5133005883BA /* RMOperationViewController.swift */,
+			);
+			path = Task4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +206,12 @@
 				0199661F2BAD4D97005883BA /* DispatchWorkItemViewController.swift in Sources */,
 				019965E22BA9B633005883BA /* SemaphoreTaskViewController.swift in Sources */,
 				019965DE2BA9B633005883BA /* AppDelegate.swift in Sources */,
+				019966232BAD4E84005883BA /* SendableViewController.swift in Sources */,
 				0199661B2BAD4C9C005883BA /* DifferentDirectionsViewController.swift in Sources */,
 				0199661D2BAD4D28005883BA /* RecipeViewController.swift in Sources */,
 				019966192BAD4B72005883BA /* RaceConditionViewController.swift in Sources */,
 				019966172BAD4AA3005883BA /* DeadLockViewController.swift in Sources */,
+				019966252BAD5133005883BA /* RMOperationViewController.swift in Sources */,
 				019965E02BA9B633005883BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

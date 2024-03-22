@@ -57,3 +57,6 @@ final class ArrayAdditionService {
         lastWorkItem.cancel()
     }
 }
+
+// надо отменить последную задачу
+// и в функции addElement проверить отменён ли item или нет
