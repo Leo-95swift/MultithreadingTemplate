@@ -18,50 +18,62 @@ protocol RMOperationProtocol {
     func start()
 }
 
-class RMOperation: RMOperationProtocol {
-    var priority: DispatchQoS.QoSClass
+final class RMOperation: RMOperationProtocol {
+    var priority: DispatchQoS.QoSClass = .default
     
     var completionBlock: (() -> Void)?
     
-    var isFinished: Bool
+    var isFinished: Bool = false
     
     func start() {
-        
+        DispatchQueue.global(qos: priority).async { [weak self] in
+            self?.completionBlock?()
+        }
     }
-    
-    init(
-        priority: DispatchQoS.QoSClass,
-        completionBlock: ( () -> Void)? = nil,
-        isFinished: Bool
-    ) {
-        self.priority = priority
-        self.completionBlock = completionBlock
-        self.isFinished = isFinished
-    }
-    
     
     /// В методе start. реализуйте все через глобальную паралельную очередь с приоритетами.
- 
+    
 }
 
-/// Задача 2 из Task 4.
 final class RMOperationViewController: UIViewController {
+    let dispatchGroup = DispatchGroup()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let operationFirst = RMOperation()
+        let operationSecond = RMOperation()
+        
+        operationFirst.priority = .userInitiated
+        operationFirst.completionBlock = {
+            
+            for _ in 0..<50 {
+                print(1)
+            }
+            print(Thread.current)
+            print("Операция 1 полностью завершена!")
+            self.dispatchGroup.leave()
+        }
+        
+        dispatchGroup.enter()
+        operationFirst.start()
+        
+        operationSecond.priority = .background
+        operationSecond.completionBlock = {
+            
+            for _ in 0..<50 {
+                print(2)
+            }
+            print(Thread.current)
+            print("Операция 2 полностью завершена!")
+            self.dispatchGroup.leave()
+        }
+        
+        dispatchGroup.enter()
+        operationSecond.start()
+        
+        
+        dispatchGroup.wait()
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
