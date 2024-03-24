@@ -14,7 +14,6 @@ final class DeadLockViewController: UIViewController {
         super.viewDidLoad()
 
         let serialQueue = DispatchQueue(label: "com.example.myQueue")
-        let otherSerialQueue = DispatchQueue(label: "com.example.otherQueue")
 
         serialQueue.async {
            serialQueue.async {

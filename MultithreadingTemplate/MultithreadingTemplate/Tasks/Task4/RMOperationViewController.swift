@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Задача 2 из Task 4.
 protocol RMOperationProtocol {
     // Приоритеты
     var priority: DispatchQoS.QoSClass { get }
@@ -24,6 +25,7 @@ final class RMOperation: RMOperationProtocol {
     var completionBlock: (() -> Void)?
     
     var isFinished: Bool = false
+    var isExecuting: Bool = false
     
     func start() {
         DispatchQueue.global(qos: priority).async { [weak self] in
@@ -46,7 +48,6 @@ final class RMOperationViewController: UIViewController {
         
         operationFirst.priority = .userInitiated
         operationFirst.completionBlock = {
-            
             for _ in 0..<50 {
                 print(1)
             }

@@ -21,6 +21,8 @@
 		0199661F2BAD4D97005883BA /* DispatchWorkItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199661E2BAD4D97005883BA /* DispatchWorkItemViewController.swift */; };
 		019966232BAD4E84005883BA /* SendableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966222BAD4E84005883BA /* SendableViewController.swift */; };
 		019966252BAD5133005883BA /* RMOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966242BAD5133005883BA /* RMOperationViewController.swift */; };
+		019966272BAF4F90005883BA /* ThreadSafeArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966262BAF4F90005883BA /* ThreadSafeArrayViewController.swift */; };
+		019966292BB037A9005883BA /* CustomOperationQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966282BB037A9005883BA /* CustomOperationQueueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		0199661E2BAD4D97005883BA /* DispatchWorkItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchWorkItemViewController.swift; sourceTree = "<group>"; };
 		019966222BAD4E84005883BA /* SendableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableViewController.swift; sourceTree = "<group>"; };
 		019966242BAD5133005883BA /* RMOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMOperationViewController.swift; sourceTree = "<group>"; };
+		019966262BAF4F90005883BA /* ThreadSafeArrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeArrayViewController.swift; sourceTree = "<group>"; };
+		019966282BB037A9005883BA /* CustomOperationQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperationQueueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 			children = (
 				019966222BAD4E84005883BA /* SendableViewController.swift */,
 				019966242BAD5133005883BA /* RMOperationViewController.swift */,
+				019966282BB037A9005883BA /* CustomOperationQueueViewController.swift */,
+				019966262BAF4F90005883BA /* ThreadSafeArrayViewController.swift */,
 			);
 			path = Task4;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 				019966152BAD4A29005883BA /* DispatchGroupViewController.swift in Sources */,
 				0199661F2BAD4D97005883BA /* DispatchWorkItemViewController.swift in Sources */,
 				019965E22BA9B633005883BA /* SemaphoreTaskViewController.swift in Sources */,
+				019966292BB037A9005883BA /* CustomOperationQueueViewController.swift in Sources */,
 				019965DE2BA9B633005883BA /* AppDelegate.swift in Sources */,
 				019966232BAD4E84005883BA /* SendableViewController.swift in Sources */,
 				0199661B2BAD4C9C005883BA /* DifferentDirectionsViewController.swift in Sources */,
@@ -213,6 +220,7 @@
 				019966172BAD4AA3005883BA /* DeadLockViewController.swift in Sources */,
 				019966252BAD5133005883BA /* RMOperationViewController.swift in Sources */,
 				019965E02BA9B633005883BA /* SceneDelegate.swift in Sources */,
+				019966272BAF4F90005883BA /* ThreadSafeArrayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
