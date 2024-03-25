@@ -8,18 +8,21 @@
 import UIKit
 
 /// Задача 1 из Task 5
-final class DispatchQueueViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        print(1)
-        DispatchQueue.main.async {
-            print(2)
-        }
-        print(3)
-    }
-}
+
+// исходная версия
+//final class DispatchQueueViewController: UIViewController {
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//        print(1)
+//
+//        DispatchQueue.main.async {
+//            print(2)
+//        }
+//        print(3)
+//    }
+//}
 
 // сначала выведится 1
 
@@ -28,3 +31,21 @@ final class DispatchQueueViewController: UIViewController {
 // потом уже выведится 2
 
 // в итоге получаем 1, 3, 2
+
+/// версия с Task вместо DispatchQueue.main.async
+final class DispatchQueueViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print(1)
+        
+        Task {
+            print(2)
+        }
+        
+        print(3)
+    }
+}
+
+// Выводится так же

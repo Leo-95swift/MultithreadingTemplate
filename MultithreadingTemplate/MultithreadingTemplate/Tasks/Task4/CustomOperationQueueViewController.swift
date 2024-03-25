@@ -62,7 +62,7 @@ final class RMOperationQueue: RMOperationQueueProtocol {
     }
     
     func executeNextOperation() {
-        if let nextOperation = operations
+        if let _ = operations
             .first(where: { !$0.isExecuting && !$0.isFinished }) {
             executeNextOperation()
         }
