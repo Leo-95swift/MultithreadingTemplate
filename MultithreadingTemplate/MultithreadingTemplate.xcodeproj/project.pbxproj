@@ -23,6 +23,14 @@
 		019966252BAD5133005883BA /* RMOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966242BAD5133005883BA /* RMOperationViewController.swift */; };
 		019966272BAF4F90005883BA /* ThreadSafeArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966262BAF4F90005883BA /* ThreadSafeArrayViewController.swift */; };
 		019966292BB037A9005883BA /* CustomOperationQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966282BB037A9005883BA /* CustomOperationQueueViewController.swift */; };
+		0199662C2BB03DB1005883BA /* DispatchQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199662B2BB03DB1005883BA /* DispatchQueueViewController.swift */; };
+		0199662E2BB03EC8005883BA /* DetachedTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199662D2BB03EC8005883BA /* DetachedTaskViewController.swift */; };
+		019966302BB03F24005883BA /* MainActorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199662F2BB03F24005883BA /* MainActorViewController.swift */; };
+		019966322BB0832D005883BA /* TurnToAsyncAwaitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966312BB0832D005883BA /* TurnToAsyncAwaitViewController.swift */; };
+		019966342BB0844A005883BA /* NetworkService1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966332BB0844A005883BA /* NetworkService1ViewController.swift */; };
+		019966362BB084F5005883BA /* CancelTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966352BB084F5005883BA /* CancelTaskViewController.swift */; };
+		019966382BB0854D005883BA /* TaskGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966372BB0854D005883BA /* TaskGroupViewController.swift */; };
+		0199663A2BB15223005883BA /* NetworkService2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019966392BB15223005883BA /* NetworkService2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +52,14 @@
 		019966242BAD5133005883BA /* RMOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMOperationViewController.swift; sourceTree = "<group>"; };
 		019966262BAF4F90005883BA /* ThreadSafeArrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeArrayViewController.swift; sourceTree = "<group>"; };
 		019966282BB037A9005883BA /* CustomOperationQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperationQueueViewController.swift; sourceTree = "<group>"; };
+		0199662B2BB03DB1005883BA /* DispatchQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueViewController.swift; sourceTree = "<group>"; };
+		0199662D2BB03EC8005883BA /* DetachedTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetachedTaskViewController.swift; sourceTree = "<group>"; };
+		0199662F2BB03F24005883BA /* MainActorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActorViewController.swift; sourceTree = "<group>"; };
+		019966312BB0832D005883BA /* TurnToAsyncAwaitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnToAsyncAwaitViewController.swift; sourceTree = "<group>"; };
+		019966332BB0844A005883BA /* NetworkService1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService1ViewController.swift; sourceTree = "<group>"; };
+		019966352BB084F5005883BA /* CancelTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelTaskViewController.swift; sourceTree = "<group>"; };
+		019966372BB0854D005883BA /* TaskGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupViewController.swift; sourceTree = "<group>"; };
+		019966392BB15223005883BA /* NetworkService2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +124,7 @@
 			children = (
 				019966202BAD4E03005883BA /* Task3 */,
 				019966212BAD4E1C005883BA /* Task4 */,
+				0199662A2BB03B05005883BA /* Task5 */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -135,6 +152,21 @@
 				019966262BAF4F90005883BA /* ThreadSafeArrayViewController.swift */,
 			);
 			path = Task4;
+			sourceTree = "<group>";
+		};
+		0199662A2BB03B05005883BA /* Task5 */ = {
+			isa = PBXGroup;
+			children = (
+				0199662B2BB03DB1005883BA /* DispatchQueueViewController.swift */,
+				0199662F2BB03F24005883BA /* MainActorViewController.swift */,
+				0199662D2BB03EC8005883BA /* DetachedTaskViewController.swift */,
+				019966312BB0832D005883BA /* TurnToAsyncAwaitViewController.swift */,
+				019966332BB0844A005883BA /* NetworkService1ViewController.swift */,
+				019966392BB15223005883BA /* NetworkService2ViewController.swift */,
+				019966352BB084F5005883BA /* CancelTaskViewController.swift */,
+				019966372BB0854D005883BA /* TaskGroupViewController.swift */,
+			);
+			path = Task5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,13 +242,21 @@
 			files = (
 				019966152BAD4A29005883BA /* DispatchGroupViewController.swift in Sources */,
 				0199661F2BAD4D97005883BA /* DispatchWorkItemViewController.swift in Sources */,
+				0199662C2BB03DB1005883BA /* DispatchQueueViewController.swift in Sources */,
 				019965E22BA9B633005883BA /* SemaphoreTaskViewController.swift in Sources */,
 				019966292BB037A9005883BA /* CustomOperationQueueViewController.swift in Sources */,
+				019966302BB03F24005883BA /* MainActorViewController.swift in Sources */,
 				019965DE2BA9B633005883BA /* AppDelegate.swift in Sources */,
 				019966232BAD4E84005883BA /* SendableViewController.swift in Sources */,
+				019966322BB0832D005883BA /* TurnToAsyncAwaitViewController.swift in Sources */,
 				0199661B2BAD4C9C005883BA /* DifferentDirectionsViewController.swift in Sources */,
+				0199662E2BB03EC8005883BA /* DetachedTaskViewController.swift in Sources */,
+				019966362BB084F5005883BA /* CancelTaskViewController.swift in Sources */,
 				0199661D2BAD4D28005883BA /* RecipeViewController.swift in Sources */,
 				019966192BAD4B72005883BA /* RaceConditionViewController.swift in Sources */,
+				019966342BB0844A005883BA /* NetworkService1ViewController.swift in Sources */,
+				0199663A2BB15223005883BA /* NetworkService2ViewController.swift in Sources */,
+				019966382BB0854D005883BA /* TaskGroupViewController.swift in Sources */,
 				019966172BAD4AA3005883BA /* DeadLockViewController.swift in Sources */,
 				019966252BAD5133005883BA /* RMOperationViewController.swift in Sources */,
 				019965E02BA9B633005883BA /* SceneDelegate.swift in Sources */,

@@ -24,7 +24,7 @@ final class SemaphoreTaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var phrasesService = PhrasesService()
+        let phrasesService = PhrasesService()
         
         DispatchQueue.global().async {
             for i in 0..<10 {

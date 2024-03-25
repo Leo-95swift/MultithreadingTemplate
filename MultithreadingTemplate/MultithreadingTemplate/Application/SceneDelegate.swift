@@ -13,7 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = RMOperationViewController()
+        window.rootViewController = DetachedTaskViewController()
         window.makeKeyAndVisible()
         self.window = window
     }

@@ -1,0 +1,41 @@
+//
+//  CancelTaskViewController.swift
+//  MultithreadingTemplate
+//
+//  Created by Levon Shaxbazyan on 24.03.24.
+//
+
+import UIKit
+
+/// Задача 7 из Task 5
+final class CancelTaskViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Task {
+            await getAverageTemperature()
+        }
+    }
+    
+    func getAverageTemperature() async {
+        let fetchTask = Task { () -> Double in
+            
+            let url = URL(string: "https://hws.dev/readings.json")!
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let readings = try JSONDecoder().decode([Double].self, from: data)
+            let sum = readings.reduce(0, +)
+            return sum / Double(readings.count)
+        }
+        
+        // Тут отмените задачу
+            fetchTask.cancel()
+        
+        do {
+            let result = try await fetchTask.value
+            print("Average temperature: \(result)")
+        } catch {
+            print("Failed to get data.")
+        }
+    }
+}
